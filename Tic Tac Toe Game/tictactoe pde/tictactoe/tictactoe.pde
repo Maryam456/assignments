@@ -10,7 +10,7 @@ void setup() {
   println("starting of Console");// If you cannot see this, theh find another way to
 
   //finding all fonts on systen
-  levelFont = createFont ("stencil", 90);
+  levelfont = createFont ("stencil", 90);
   xoFont = createFont ("Palace Script", 90);
   playerFont = createFont ("SimSun", 90);
   scoreFont = createFont ("stencil", 90);
@@ -33,9 +33,9 @@ void setup() {
   fill(0);//ink, hexidecimal copied from color selector
   textAlign(CENTER, CENTER); //align X&Y, see processing.org
   //values: [LEFT| CENTER| RIGHT] & [TOP | BOTTOM | BASELINE]
-  textfont(levelFont, 49); //change the number until it fits, largest font size
+  textFont(levelfont, 49); //change the number until it fits, largest font size
   text(easy, 0, 0, width*1/3, height*1/12);
-  fll(255); //Reset to white for rest of the program
+  fill(255); //Reset to white for rest of the program
 
 
 
@@ -110,12 +110,12 @@ void draw() {
   if (titleFontString == "Harrington") {
     titleFontSize = titleFontSize * titleFontDecrease;
   }
-  println ("New Font Size", titleFontsize);
+  println ("New Font Size", titleontsize);
   textFont(titleFont, titleFontSize); //Change the number until it fits, largest font size
   text(title, width*1/4, height*0, titleWidth, height*1/10);
   fill (255);//To reset the program 
 
-  PFont titleFont;
+  PFont titlefont;
   //String[] fontList = PFont.list(); //To list all fonts available on system
 
   float geometry;
