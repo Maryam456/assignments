@@ -1,12 +1,17 @@
 //Global Variable
 
 void setup() {
-   size(100,100);
+   size(600,600);
+   fill(255);
    
 }
  
  void draw (){
    GUI_Setup();
+   background(700);
+   rect(borderStroke, borderStroke, height*3/4, width, height*3/4);
+   float right;
+ 
  }
 
 void GUI_Setup(){
@@ -28,7 +33,7 @@ void GUI_Setup(){
   rect(15, 20, 35, 60);
   float value = hue(c);
   fill(value);
-  rect(50, 20, 35, 60);
+ 
   
   
 }
