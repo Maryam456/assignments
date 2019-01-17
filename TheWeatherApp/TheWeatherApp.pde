@@ -11,5 +11,12 @@ void setup() {
    void draw (){
    GUI_Setup();
    background(700);
-   rect(borderStroke,height*3/4, width, height*3/4);
+   fill(255, 0, 0);
+  ellipse(height*1/4, width, height*1/4, width);
+
  }
+ 
+ 
+ void buildingURL() {
+ }
+ 
